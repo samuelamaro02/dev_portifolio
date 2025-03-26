@@ -47,7 +47,7 @@ Acesse http://localhost:3000 no navegador
 🌐 Acesso Online
 
 O projeto está hospedado na Vercel:
-https://seu-portfolio.vercel.app
+dev-portifolio-ashen.vercel.app
 
 🤝 Contribuindo
 
@@ -63,4 +63,4 @@ Contribuições são bem-vindas! Siga estes passos:
 
 5. **Abra um Pull Request**
 
-💻 Desenvolvido com ❤️ por Samuel Amaro.git
+💻 Desenvolvido com ❤️ por Samuel Amaro
