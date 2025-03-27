@@ -16,7 +16,7 @@ Bem-vindo ao meu portfólio digital! 🌟 Este projeto é um website pessoal des
 
 ## ⚡ Começando
 
-1. Clone o repositório:
+Clone o repositório:
 ```bash
    git clone https://github.com/samuelamaro02/dev_portifolio.git
 ```
@@ -30,8 +30,9 @@ npm install
 yarn install
 # ou
 pnpm install
-Inicie o servidor de desenvolvimento:
 ```
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
 Copy
@@ -47,7 +48,7 @@ Acesse http://localhost:3000 no navegador
 🌐 Acesso Online
 
 O projeto está hospedado na Vercel:
-dev-portifolio-ashen.vercel.app
+[dev-portifolio-ashen.vercel.app](https://dev-portifolio-ashen.vercel.app/)
 
 🤝 Contribuindo
 

@@ -61,8 +61,15 @@ h1 {
   font-weight: 800;
 }
 
+h4{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.48px;
+}
+
 h5 {
-  font-family: Sora;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -70,6 +77,15 @@ h5 {
   letter-spacing: -0.4px;
   text-transform: capitalize;
 }
+
+h6 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.32px;
+}
+
 
 p { 
   font-size: 16px;
