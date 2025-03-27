@@ -12,7 +12,7 @@ export default function sectionExperience(){
                         <div className={styles.cardTittle}>
                             <img 
                                 src="/icons/google.svg"  
-                                className={styles.heroImage}
+                                alt=""
                             />
                             <h4>Lead Software Engineer at Google</h4>
                             <h6>Nov 2019 - Present</h6>
@@ -23,7 +23,7 @@ export default function sectionExperience(){
                         <div className={styles.cardTittle}>
                             <img 
                                 src="/icons/youtube.svg"  
-                                className={styles.heroImage}
+                                alt=""
                             />
                             <h4>Software Engineer at Youtube</h4>
                             <h6>Jan 2017 - Oct 2019</h6>
@@ -34,7 +34,7 @@ export default function sectionExperience(){
                         <div className={styles.cardTittle}>
                             <img 
                                 src="/icons/apple.svg"  
-                                className={styles.heroImage}
+                                alt=""
                             />
                             <h4>Junior Software Engineer at Apple</h4>
                             <h6>Jan 2016 - Dec 2017</h6>
