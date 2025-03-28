@@ -1,9 +1,10 @@
+"use client";
 import styles from "./sectionSkills.module.css"; 
 
-export default function sectionSkills (){ 
+export default function SectionSkills (){ 
     return (
         <>
-        <div className={styles.container}>
+        <div id="skillsSection" className={styles.container}>
          <div className={styles.containerSkills}>
             <h1>My Skills</h1>
                 <div className={styles.gridSkills}>

@@ -1,3 +1,4 @@
+import Header from "./components/layout/Header/header";
 import Hero from "./components/sections/Hero/hero";
 import SectionSkills from "./components/sections/Skills/sectionSkills";
 import SectionExperience from "./components/sections/Experience/sectionExperience";
@@ -10,6 +11,7 @@ import Footer from "./components/layout/Footer/footer";
 export default function Home() {
   return (
     <main>
+      <Header/>
       <Hero/>
       <SectionSkills/>
       <SectionExperience/>

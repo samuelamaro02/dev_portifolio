@@ -1,8 +1,9 @@
+"use client";
 import styles from "./sectionCta.module.css";
 
 export default function SectionCta(){
     return (
-       <div className={styles.container}>
+       <div id="contactSection" className={styles.container}>
             <div className={styles.containerCta}>
                 <div className={styles.infoCta}>
                     <h1>Let’s talk for<br></br>Something special</h1>

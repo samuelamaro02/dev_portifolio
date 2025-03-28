@@ -1,9 +1,10 @@
+"use client";
 import Image from 'next/image';
 import styles from "./sectionExperience.module.css"; 
 
 export default function SectionExperience() {
     return (
-        <div className={styles.container}>
+        <div id="experienceSection" className={styles.container}>
             <div className={styles.containerExperience}>
                 <h1>My Experience</h1>
                 <div className={styles.gridExperience}>

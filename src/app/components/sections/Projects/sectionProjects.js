@@ -1,9 +1,10 @@
+"use client";
 import Image from 'next/image';
 import styles from "./sectionProjects.module.css";
 
 export default function SectionProjetcs(){
     return (
-        <div className={styles.container}>
+        <div id="projectsSection" className={styles.container}>
             <div className={styles.containerProjects}>
                 <h1>My Projects</h1>
                 <div className={styles.gridProjects}>

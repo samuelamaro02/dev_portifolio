@@ -1,10 +1,11 @@
+"use client";
 import Image from "next/image";
 import styles from "./hero.module.css";
 
 export default function Home() {
   return (
     <>
-      <div className={styles.container}> 
+      <div id="heroSection" className={styles.container}> 
         <div className={styles.heroContent}>
           <div>
             <h1>

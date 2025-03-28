@@ -1,11 +1,11 @@
+
 .container {
     width: 100vw;
-    height: 728px;
+    height: 708px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin:0;
+    align-items: center; 
   }
 
 .containerSkills{
@@ -65,8 +65,7 @@
 
 @media (max-width: 420px) {
     .container {
-      height: auto;
-      padding: 40px 0;
+      height: 100%;
       gap: 40px;
     }
   
