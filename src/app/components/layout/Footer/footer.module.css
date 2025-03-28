@@ -1,63 +1,42 @@
-.container {
-    width: 100vw;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-primary-black);
-  }
-
-  .containerFooter{
-    width: 1280px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-#logo{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
+.new_footer_top {
+  position: relative;
+  overflow-x: hidden;
+  height: 300px; /* altura mínima pro fundo aparecer */
+  background: #fbfbfd;
 }
 
-#copyright{
-    color: var(--color-primary-white);
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    gap:12px;
- }
+.footer_bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 266px;
+  background: url(/images/background_animation.png) no-repeat center bottom;
+  background-size: cover;
+}
 
+.footer_bg_one {
+  background: url(/images/fusca.gif) no-repeat center center;
+  width: 330px;
+  height: 105px;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  animation: myfirst 22s linear infinite;
+}
 
- @media (max-width: 420px) {
-    .container {
-      height: 80px;
-    }
-  
-    .containerFooter{
-      width: 100%;
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: row;
-      gap: 40px;
-    }
+.footer_bg_two {
+  background: url(/images/ciclista.gif) no-repeat center center;
+  width: 88px;
+  height: 100px;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+  animation: myfirst 30s linear infinite;
+}
 
-    #copyright {
-        gap: 0px;
-    }
-
-    #copyright > h6{
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px; /* 166.667% */
-        letter-spacing: 0.24px
-    }
-    
-  }
-
-
+@keyframes myfirst {
+  0% { left: -25%; }
+  100% { left: 100%; }
+}

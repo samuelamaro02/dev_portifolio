@@ -1,25 +1,14 @@
-import Image from 'next/image';
-import styles from "./footer.module.css"; 
+import styles from "./Footer.module.css";
 
-export default function Footer (){
-    return (
-        <footer className={styles.container}>
-            <div className={styles.containerFooter}>
-                <div id={styles.logo}>
-                    <Image
-                        src="/images/logo.webp"
-                        alt="logo"
-                        layout="intrinsic"
-                        width={140}
-                        height={40}
-                    />
-                </div>
-                <div id={styles.copyright}>
-                    <h6>@ 2019-2023 Personal</h6>
-                    <h6>Made In Figma</h6>
-                </div>
-            </div>
-        </footer>
-    )
-
+export default function Footer() {
+  return (
+    <footer className={styles.newFooterArea}>
+      <div className={styles.new_footer_top}>
+        <div className={styles.footer_bg}>
+            <div className={styles.footer_bg_one}></div>
+            <div className={styles.footer_bg_two}></div>
+        </div>
+        </div>
+    </footer>
+  );
 }
