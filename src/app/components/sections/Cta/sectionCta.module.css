@@ -1,6 +1,6 @@
 .container {
     width: 100vw;
-    height: 450px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,10 +18,14 @@
 
   .infoCta{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .infoCta > h1{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+
   }
 
   .infoCta > p{
@@ -55,7 +59,7 @@
     }
 
     .infoCta h1{
-        padding-bottom: 32px;    
+        padding-bottom: 0px;    
     }
 
     .infoCta p{

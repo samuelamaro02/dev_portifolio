@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation"; 
 import Image from "next/image";
 import styles from "./header.module.css";
@@ -7,10 +7,10 @@ import styles from "./header.module.css";
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const router = useRouter(); 
+    const navRef = useRef(null); // ref para o <nav>
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
-
         if (section) {
             window.scrollTo({ top: section.offsetTop - 80, behavior: "smooth" });
         } else {
@@ -18,6 +18,17 @@ export default function Header() {
         }
         setMenuOpen(false);
     };
+
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (menuOpen && navRef.current && !navRef.current.contains(e.target)) {
+                setMenuOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [menuOpen]);
 
     return (
         <header className={styles.header}>
@@ -45,7 +56,7 @@ export default function Header() {
                     <span className={styles.hamburger}></span>
                 </label>
 
-                <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
+                <nav ref={navRef} className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
                     <button onClick={() => setMenuOpen(false)} className={styles.closeButton}>✖</button>
                     <a onClick={() => scrollToSection("heroSection")} className={styles.navItem}>Home</a>
                     <a onClick={() => scrollToSection("aboutSection")} className={styles.navItem}>Sobre</a>

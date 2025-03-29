@@ -8,8 +8,7 @@ export default function SectionCta(){
                 <div className={styles.infoCta}>
                     <h1>Let’s talk for<br></br>Something special</h1>
                     <p>I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
-                    <h3>Youremail@gmail.com<br></br>1234567890</h3>
-
+                    <a href="https://wa.me/5583998404188">Entrar em contato</a> 
                 </div>
                 <div className={styles.containerForm}>
                 </div>

@@ -1,11 +1,103 @@
-.new_footer_top {
+.containerFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+}
+
+
+.infoFooter{
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.infoFooter > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 420px;
+  height: 100%;
+}
+
+.logoFooter {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.menuFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.navItem{
+  width: 100%;
+  color: var(--color-primary-black);
+  background-image: none;
+  padding: 0px;
+  box-shadow: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: 1s ease-in-out;
+}
+
+.navItem:hover{
+  text-decoration: underline;
+}
+
+.socialFooter { 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.socialIcons > a {
+  width: 100%;
+  background-image: none;
+  padding: 10px;
+  border: 1px solid var(--color-zinc-500);
+}
+
+.socialIcons > a:hover {
+  background-color: var(--color-primary-black);
+}
+
+.socialIcons > a:hover img {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.footerAnimation {
   position: relative;
   overflow-x: hidden;
-  height: 300px; /* altura mínima pro fundo aparecer */
+  height: 300px; 
   background: #fbfbfd;
 }
 
-.footer_bg {
+.animationBackground{
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -14,7 +106,7 @@
   background-size: cover;
 }
 
-.footer_bg_one {
+.animationFusca {
   background: url(/images/fusca.gif) no-repeat center center;
   width: 330px;
   height: 105px;
@@ -22,10 +114,10 @@
   position: absolute;
   bottom: 0;
   left: 30%;
-  animation: myfirst 22s linear infinite;
+  animation: animationFooter 22s linear infinite;
 }
 
-.footer_bg_two {
+.animationBike {
   background: url(/images/ciclista.gif) no-repeat center center;
   width: 88px;
   height: 100px;
@@ -33,10 +125,36 @@
   position: absolute;
   bottom: 0;
   left: 38%;
-  animation: myfirst 30s linear infinite;
+  animation: animationFooter 30s linear infinite;
 }
 
-@keyframes myfirst {
+@keyframes animationFooter {
   0% { left: -25%; }
   100% { left: 100%; }
+}
+
+@media (max-width: 420px) {
+
+  .containerFooter {
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  .infoFooter{
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .infoFooter > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+
 }
