@@ -7,7 +7,7 @@ import styles from "./header.module.css";
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const router = useRouter(); 
-    const navRef = useRef(null); // ref para o <nav>
+    const navRef = useRef(null); 
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
@@ -42,7 +42,6 @@ export default function Header() {
                         height={40}
                     />
                 </div>
-
                 <input
                     type="checkbox"
                     id="menu-toggle"

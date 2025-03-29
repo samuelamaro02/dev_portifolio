@@ -47,21 +47,18 @@
 }
 
 .cardSkills:hover {
-    color: white;
-    background-color:var(--color-primary-black);
+  color: white;
+  background-color:var(--color-primary-black);
 }
 
-.cardSkills svg {
-    transition: fill 0.3s ease-in-out;
+
+.cardSkills:hover > img {
+  filter: invert(1);
+  cursor: pointer;
 }
 
-.cardSkills:hover svg path[fill="black"] {
-    fill: white !important;
-  }
-  
-.cardSkills:hover svg path[fill="white"] {
-    fill: black !important;
-}
+
+
 
 @media (max-width: 420px) {
     .container {
