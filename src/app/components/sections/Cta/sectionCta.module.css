@@ -12,12 +12,13 @@
     width: 1280px;
     height: 100%;
     display: flex;
+    gap: 20px;
     flex-direction: row;
     align-items: center;
   }
 
   .infoCta{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -32,15 +33,11 @@
     width: 70%;
   }
 
-  .infoCta > h3 {
-    padding-top: 40px;
-    line-height: 40px;
+  .containerForm { 
+    width: 100%;
   }
 
-  .containerForm{
-    width: 50%;
-    height: 250px;
-  }
+
 
   @media (max-width: 420px) {
     .container {
@@ -52,25 +49,22 @@
       padding: 40px 20px;
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      
     }
     .infoCta, .containerForm{
         width: 100%;
-    }
-
-    .infoCta h1{
-        padding-bottom: 0px;    
     }
 
     .infoCta p{
         width: 100%;
     }
 
-    .infoCta h3 {
-        padding-top: 32px;
+    .containerForm{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
     }
 
-    .containerForm {
-        display: none;
-    }
+
   }

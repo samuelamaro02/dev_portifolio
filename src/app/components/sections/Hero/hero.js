@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import styles from "./hero.module.css";
+import LeadForm from '../../leadForm/LeadForm';
+import { Toaster } from 'sonner';
 
 export default function Home() {
   return (
@@ -14,11 +16,13 @@ export default function Home() {
               {' '}<span className={styles.accentText}>Dev Front-end & Webdesigner.</span>{' '}
             </h1>
             <p>
-              Transformo linhas de código em experiências fluidas e pixels em narrativas visuais. 
               Apaixonado por criar interfaces que não só funcionam, mas encantam. 
               <span className={styles.emphasisText}>Front-end é minha linguagem, mas a criatividade é meu framework.</span>
             </p>
-            <a href="https://wa.me/5583998404188">Entrar em contato</a>
+            <div className={styles.containerForm}>
+                    <LeadForm />
+                    <Toaster richColors />
+                </div>
           </div>
           <div>
             <Image 
