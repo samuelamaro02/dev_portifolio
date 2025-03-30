@@ -16,8 +16,8 @@ export default function Home() {
               {' '}<span className={styles.accentText}>Dev Front-end & Webdesigner.</span>{' '}
             </h1>
             <p>
-              Apaixonado por criar interfaces que não só funcionam, mas encantam. 
-              <span className={styles.emphasisText}>Front-end é minha linguagem, mas a criatividade é meu framework.</span>
+              Construo interfaces bonitas, rápidas e intuitivas para uma experiência digital eficiente e envolvente.
+              <span className={styles.emphasisText}>A criatividade é meu framework.</span>
             </p>
             <div className={styles.containerForm}>
                     <LeadForm />

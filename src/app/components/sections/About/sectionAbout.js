@@ -8,7 +8,7 @@ export default function SectionAbout() {
             <div className={styles.containerAbout}>
                 <div className={styles.imageAbout}>
                     <Image 
-                        src="/icons/about.svg"  
+                        src="/images/about.webp"  
                         alt="About logo"
                         layout="intrinsic"
                         width={525}

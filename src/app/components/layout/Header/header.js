@@ -36,7 +36,7 @@ export default function Header() {
                 <div className={styles.logo}>
                     <a onClick={() => scrollToSection("heroSection")} className={styles.navLogo}>
                         <Image
-                            src="/images/logo-black.webp"
+                            src="/icons/logo.svg"
                             alt="Logo"
                             layout="intrinsic"
                             width={132}

@@ -27,8 +27,7 @@ export default function Footer() {
           <div className={styles.logoFooter}>
             <a onClick={() => scrollToSection("heroSection")} className={styles.navItem}> 
               <Image
-                href="samuelamaro.com"
-                src="/images/logo-black.webp"
+                src="/icons/logo.svg"
                 alt="logo-black"
                 layout="intrinsic"
                 width={132}
@@ -50,7 +49,7 @@ export default function Footer() {
                 </nav>
           </div>
           <div className={styles.socialFooter}>
-            <h6>Social</h6>
+            <h6>Redes Sociais</h6>
             <div className={styles.socialIcons}>
               <a href='https://www.behance.net/samuelamaro4' target='blank'>
                 <Image
@@ -64,6 +63,22 @@ export default function Footer() {
                <Image
                 src="/icons/linkedin.svg"
                 alt="icon-linkedin"
+                width={30}
+                height={30}
+              />
+              </a>
+              <a href='https://github.com/samuelamaro02' target='blank'>
+               <Image
+                src="/icons/github.svg"
+                alt="icon-github"
+                width={30}
+                height={30}
+              />
+              </a>
+              <a href='https://www.instagram.com/osamuelamaro/' target='blank'>
+               <Image
+                src="/icons/instagram.svg"
+                alt="icon-instagram"
                 width={30}
                 height={30}
               />

@@ -25,13 +25,13 @@
     gap: 20px;
   }
   
-  .heroContent > div:nth-child(2)  {
-    width: 65%;
-    height: 596px;
-  }
   
   .accentText { 
     font-weight: 400;
+  }
+
+  .heroContent > p {
+    width: 50%;
   }
   
   .emphasisText {
