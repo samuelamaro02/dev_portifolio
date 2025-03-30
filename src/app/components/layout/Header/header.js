@@ -34,13 +34,15 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.containerHeader}>
                 <div className={styles.logo}>
-                    <Image
-                        src="/images/logo-black.webp"
-                        alt="Logo"
-                        layout="intrinsic"
-                        width={132}
-                        height={40}
-                    />
+                    <a onClick={() => scrollToSection("heroSection")} className={styles.navLogo}>
+                        <Image
+                            src="/images/logo-black.webp"
+                            alt="Logo"
+                            layout="intrinsic"
+                            width={132}
+                            height={40}
+                        />
+                    </a>
                 </div>
                 <input
                     type="checkbox"

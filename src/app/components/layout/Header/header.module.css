@@ -61,6 +61,14 @@
   .open {
     right: 0;
   }
+
+  .navLogo{
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+
+  }
   
   .navItem {
     color: white;

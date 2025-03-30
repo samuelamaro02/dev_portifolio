@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import Image from 'next/image';
 import styles from "./footer.module.css";
 
+
 export default function Footer() {
 
     const [menuOpen] = useState(false);
@@ -24,13 +25,16 @@ export default function Footer() {
       <div className={styles.containerFooter}>
         <div className={styles.infoFooter}>
           <div className={styles.logoFooter}>
-            <Image
-              src="/images/logo-black.webp"
-              alt="logo-black"
-              layout="intrinsic"
-              width={132}
-              height={40}
-            />
+            <a onClick={() => scrollToSection("heroSection")} className={styles.navItem}> 
+              <Image
+                href="samuelamaro.com"
+                src="/images/logo-black.webp"
+                alt="logo-black"
+                layout="intrinsic"
+                width={132}
+                height={40}
+              />
+            </a>
             <p>Front-end é minha linguagem, mas a criatividade é meu framework.</p>
           </div>
           <div className={styles.menuFooter}>
