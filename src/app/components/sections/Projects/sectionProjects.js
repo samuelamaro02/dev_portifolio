@@ -19,36 +19,49 @@ export default function SectionProjetcs(){
                             <div className={styles.projectsDescription}>
                                 <h1>01</h1>
                                 <h2>Seu Stand</h2>
-                                <p>I&apos;m Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                                <p>Seu Stand é um SaaS inovador que conecta empresas a stands em eventos, facilitando a reserva e gestão de espaços. A plataforma simplifica a logística para organizadores e expositores, tornando eventos mais eficientes. Confira nossa landing page para saber mais!</p>
                             </div>
                     </div>
                     <div className={styles.cardProjects}>
                             <Image 
-                                src="/images/image-pro-02.webp"  
-                                alt="Portifólio"
+                                src="/images/resolve.webp"  
+                                alt="resolve"
                                 layout="intrinsic"
                                 width={530}
                                 height={397.73}
                             />
                             <div className={styles.projectsDescription}>
                                 <h1>02</h1>
-                                <h2>Euphoria - Ecommerce (Apparels) Website Template</h2>
-                                <p>I&apos;m Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
-                                when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                                <h2>Resolve Eventos</h2>
+                                <p>Resolve Eventos é uma empresa especializada na produção e gestão de eventos corporativos, oferecendo soluções completas e personalizadas. Com expertise em planejamento e execução, garantem experiências memoráveis e alinhadas aos objetivos do cliente.</p>
                             </div>
                     </div>
                     <div className={styles.cardProjects}>
                             <Image 
-                                src="/images/image-pro-03.webp"  
-                                alt="Portifólio"
+                                src="/images/fisica.webp"  
+                                alt="fisica"
                                 layout="intrinsic"
                                 width={530}
                                 height={397.73}
                             />
                             <div className={styles.projectsDescription}>
                                 <h1>03</h1>
-                                <h2>Blog Website Template</h2>
-                                <p>I&apos;m Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                                <h2>Física Arretada</h2>
+                                <p>Física Arretada é o projeto do professor que descomplica a física com aulas práticas e linguagem acessível. Desenvolvi uma landing page moderna, incluindo protótipo interativo no Figma e código otimizado para performance.</p>
+                            </div>
+                    </div>
+                    <div className={styles.cardProjects}>
+                            <Image 
+                                src="/images/obi.webp"  
+                                alt="fisica"
+                                layout="intrinsic"
+                                width={530}
+                                height={397.73}
+                            />
+                            <div className={styles.projectsDescription}>
+                                <h1>04</h1>
+                                <h2>Obi Revestimentos</h2>
+                                <p>Obi Revestimentos produz revestimentos e tijolos rústicos com design autêntico e alta durabilidade para projetos residenciais e comerciais. Desenvolvemos uma landing page clean e visual, destacando os produtos com fotos reais e seções de orçamento simplificado. </p>
                             </div>
                     </div>
                 </div>
