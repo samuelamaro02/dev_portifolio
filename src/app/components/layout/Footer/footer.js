@@ -87,13 +87,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className={styles.footerAnimation}>
-        <div className={styles.animationBackground}>
-            <div className={styles.animationFusca}></div>
-            <div className={styles.animationBike}></div>
-        </div>
-      </div>
-
     </footer>
   );
 }

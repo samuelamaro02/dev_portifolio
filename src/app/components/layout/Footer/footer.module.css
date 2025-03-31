@@ -1,10 +1,11 @@
+
+
 .containerFooter{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-
+  height: 400px;
 }
 
 
@@ -13,7 +14,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 30px;
+  border-radius: 8px;
   gap: 100px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid var( --color-zinc-500);
 }
 
 .infoFooter > div {
@@ -90,48 +100,6 @@
   cursor: pointer;
 }
 
-.footerAnimation {
-  position: relative;
-  overflow-x: hidden;
-  height: 300px; 
-  background: #fbfbfd;
-}
-
-.animationBackground{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 266px;
-  background: url(/images/background_animation.png) no-repeat center bottom;
-  background-size: cover;
-}
-
-.animationFusca {
-  background: url(/images/fusca.gif) no-repeat center center;
-  width: 330px;
-  height: 105px;
-  background-size: contain;
-  position: absolute;
-  bottom: 0;
-  left: 30%;
-  animation: animationFooter 22s linear infinite;
-}
-
-.animationBike {
-  background: url(/images/ciclista.gif) no-repeat center center;
-  width: 88px;
-  height: 100px;
-  background-size: contain;
-  position: absolute;
-  bottom: 0;
-  left: 38%;
-  animation: animationFooter 30s linear infinite;
-}
-
-@keyframes animationFooter {
-  0% { left: -25%; }
-  100% { left: 100%; }
-}
 
 @media (max-width: 420px) {
 
@@ -142,6 +110,7 @@
 
   .infoFooter{
     width: 100%;
+    margin: 0px 20px 40px 20px;
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
