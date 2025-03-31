@@ -6,7 +6,7 @@ export default function SectionProjetcs(){
     return (
         <div id="projectsSection" className={styles.container}>
             <div className={styles.containerProjects}>
-                <h1>My Projects</h1>
+                <h1>Meus projetos</h1>
                 <div className={styles.gridProjects}>
                     <div className={styles.cardProjects}>
                             <Image 

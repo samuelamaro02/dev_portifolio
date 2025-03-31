@@ -6,53 +6,53 @@ export default function SectionExperience() {
     return (
         <div id="experienceSection" className={styles.container}>
             <div className={styles.containerExperience}>
-                <h1>My Experience</h1>
+                <h1>Minha jornada</h1>
                 <div className={styles.gridExperience}>
                     <div className={styles.cardExperience}>
                         <div className={styles.cardTittle}>
                             <Image 
-                                src="/icons/google.svg"  
-                                alt="Google logo"
-                                width={40}
-                                height={40}
+                                src="/icons/ufpb.svg"  
+                                alt="ufpb"
+                                width={70}
+                                height={50}
                             />
-                            <h4>Lead Software Engineer at Google</h4>
-                            <h6>Nov 2019 - Present</h6>
+                            <h4>Comunicação em Mídias Digitais</h4>
+                            <h6>Fev 2021 - Dez 2024</h6>
                         </div>
                         <div className={styles.cardDescription}>
-                            <p>As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google&apos;s core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
+                            <p>Durante meu curso em Comunicação em Mídias Digitais, mergulhei profundamente no universo da criação estratégica para plataformas online, com um forte foco em desenvolvimento web. Aprendi a dominar linguagens como HTML, CSS e JavaScript, além de explorar frameworks modernos e práticas de design responsivo e UX/UI para construir sites intuitivos e visualmente impactantes.</p>
                         </div>
                     </div>
 
                     <div className={styles.cardExperience}>
                         <div className={styles.cardTittle}>
                             <Image 
-                                src="/icons/youtube.svg"  
-                                alt="YouTube logo"
-                                width={40}
-                                height={40}
+                                src="/icons/freelancer.svg"  
+                                alt="freelancer"
+                                width={70}
+                                height={50}
                             />
-                            <h4>Software Engineer at YouTube</h4>
-                            <h6>Jan 2017 - Oct 2019</h6>
+                            <h4>Dev Freelancer</h4>
+                            <h6>Jan 2020 - Dez 2021</h6>
                         </div>
                         <div className={styles.cardDescription}>
-                            <p>At YouTube, I served as a Software Engineer, focusing on the design and implementation of backend systems for the social media giant&apos;s dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.</p>
+                            <p>Atuei como desenvolvedor web freelancer, criando sites institucionais, blogs, e-commerces e landing pages com foco em experiência do usuário e performance. Gerenciei projetos do início ao fim: desde o entendimento das necessidades do cliente até a entrega, passando por prototipagem (Figma/Adobe XD), codificação (HTML, CSS, JavaScript, React, Node.js) e integração de APIs. </p>
                         </div>
                     </div>
 
                     <div className={styles.cardExperience}>
                         <div className={styles.cardTittle}>
                             <Image 
-                                src="/icons/apple.svg"  
-                                alt="Apple logo"
-                                width={40}
-                                height={40}
+                                src="/icons/bump.svg"  
+                                alt="bump"
+                                width={70}
+                                height={50}
                             />
-                            <h4>Junior Software Engineer at Apple</h4>
-                            <h6>Jan 2016 - Dec 2017</h6>
+                            <h4>Co-founder Bump Mídia</h4>
+                            <h6>Jan 2022 - Atualmente</h6>
                         </div>
                         <div className={styles.cardDescription}>
-                            <p>During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.</p>
+                            <p>Junto ao meu sócio Arthur Julius, co-fundei a Bump Mídia, uma agência de marketing focada em soluções digitais. Na empresa, fui responsável pela gestão operacional e pelo setor de tecnologia, liderando a criação e implementação de estratégias técnicas para clientes. Desenvolvi e otimizei processos internos, gerei equipes e garanti que todos os projetos web — desde sites institucionais até plataformas personalizadas — alinhassem inovação, performance e usabilidade.</p>
                         </div>
                     </div>
                 </div>
