@@ -9,7 +9,6 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiSqlite } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
-import Image from "next/image";
 import styles from "./sectionSkills.module.css"; 
 
 export default function SectionSkills (){ 

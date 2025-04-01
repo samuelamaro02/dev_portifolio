@@ -24,22 +24,12 @@ export default function Home() {
                     <Toaster richColors />
                 </div>
           </div>
-          <div>
-            <Image 
-              src="/icons/hero.svg"  
-              className={styles.heroImage}
-              alt="Ilustração representando desenvolvimento web"
-              width={500} 
-              height={500} 
-              priority
-            />
-            <Image 
-              src="/icons/heroMobile.svg"  
-              className={styles.heroImageMobile}
-              alt="Ilustração para dispositivos móveis"
-              width={300} 
-              height={300} 
-              priority
+          <div className={styles.heroImage}>
+            <Image
+              src="/images/hero.webp"
+              alt="ilustração"
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
