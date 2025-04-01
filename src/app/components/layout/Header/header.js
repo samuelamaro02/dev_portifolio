@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
+import { IoCloseOutline } from "react-icons/io5";
 import Image from "next/image";
 import styles from "./header.module.css";
 
@@ -60,7 +61,9 @@ export default function Header() {
                     <CiMenuFries className={styles.iconMenu}/>
                 </label>
                 <nav ref={navRef} className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
-                    <div onClick={() => setMenuOpen(false)} className={styles.closeButton}> <button>✖</button></div>
+                    <div onClick={() => setMenuOpen(false)} className={styles.closeButton}>
+                        <IoCloseOutline className={styles.iconClose}/>
+                    </div>
                     <Image
                         src="/icons/logo.svg"
                         alt="Logo"
