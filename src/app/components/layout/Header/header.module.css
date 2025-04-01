@@ -52,8 +52,9 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 80px 50px;
     transition: right 0.3s ease-in-out;
     z-index: 999;
     border-left: 1px solid var(--color-primary-black);
@@ -147,7 +148,7 @@
     border: 1px solid var(--color-zinc-500);
     background-color: var(--color-primary-black);
     padding: 10px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     transition: 0.15s ease-in;
   }
   
@@ -175,7 +176,6 @@
       margin-top: 0%;
     }
 
-    
     .containerHeader {
       display: flex;
       flex-direction: row;
@@ -186,7 +186,7 @@
 
     .nav{
       width: 75%;
-      padding: 20px;
+      padding: 70px 20px;
     }
 
 }
