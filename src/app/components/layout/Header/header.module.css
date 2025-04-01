@@ -145,23 +145,24 @@
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid var(--color-zinc-500);
+    background-color: var(--color-primary-black);
     padding: 10px 20px;
     margin-bottom: 30px;
     transition: 0.15s ease-in;
   }
   
   .closeButton:hover {
-    background-color: var(--color-primary-black);
+    background-color: var(--color-zinc-500);
   }
   
   .closeButton > button { 
-    color: var(--color-primary-black);
+    color: var(--color-primary-white);
     background: none;
     border: none;
   }
   
   .closeButton:hover > button {
-    color: var(--color-primary-white);
+    color: var(--color-primary-black);
   }
   
 
@@ -173,6 +174,7 @@
       padding: 20px;
       margin-top: 0%;
     }
+
     
     .containerHeader {
       display: flex;
@@ -183,6 +185,7 @@
     }
 
     .nav{
+      width: 75%;
       padding: 20px;
     }
 
