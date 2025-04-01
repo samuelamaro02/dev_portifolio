@@ -78,24 +78,28 @@
 
 }
 
-.socialIcons {
+.footerIcons {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-.socialIcons > a {
+.footerIcons > a {
   width: 100%;
   background-image: none;
   padding: 10px;
   border: 1px solid var(--color-zinc-500);
 }
 
-.socialIcons > a:hover {
+.socialIcons {
+  color: var(--color-primary-black);
+}
+
+.footerIcons > a:hover {
   background-color: var(--color-primary-black);
 }
 
-.socialIcons > a:hover img {
+.footerIcons > a:hover .socialIcons {
   filter: invert(1);
   cursor: pointer;
 }
@@ -110,7 +114,7 @@
 
   .infoFooter{
     width: 100%;
-    margin: 0px 20px 40px 20px;
+    margin: 0px 20px px 20px;
     padding: 20px 20px;
     display: flex;
     flex-direction: column;

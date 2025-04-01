@@ -1,6 +1,11 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation"; 
+import { FaBehance } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { CiMenuFries } from "react-icons/ci";
 import Image from "next/image";
 import styles from "./header.module.css";
 
@@ -52,11 +57,8 @@ export default function Header() {
                     className={styles.checkbox}
                 />
                 <label htmlFor="menu-toggle" className={styles.menuButton}>
-                    <span className={styles.hamburger}></span>
-                    <span className={styles.hamburger}></span>
-                    <span className={styles.hamburger}></span>
+                    <CiMenuFries className={styles.iconMenu}/>
                 </label>
-
                 <nav ref={navRef} className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
                     <div onClick={() => setMenuOpen(false)} className={styles.closeButton}> <button>✖</button></div>
                     <Image
@@ -74,39 +76,19 @@ export default function Header() {
                     <a onClick={() => scrollToSection("testimonialSection")} className={styles.navItem}>Depoimentos</a>
                     <a onClick={() => scrollToSection("contactSection")} className={styles.navItem}>Contato</a>
                     <div className={styles.socialMenu}>
-                        <div className={styles.socialIcons}>
-                        <a href='https://www.behance.net/samuelamaro4' target='blank'>
-                            <Image
-                            src="/icons/behance.svg"
-                            alt="icon-behance"
-                            width={30}
-                            height={30}
-                            />
-                        </a>
-                        <a href='https://www.linkedin.com/in/samuel-amaro-230678186/' target='blank'>
-                        <Image
-                            src="/icons/linkedin.svg"
-                            alt="icon-linkedin"
-                            width={30}
-                            height={30}
-                        />
-                        </a>
-                        <a href='https://github.com/samuelamaro02' target='blank'>
-                        <Image
-                            src="/icons/github.svg"
-                            alt="icon-github"
-                            width={30}
-                            height={30}
-                        />
-                        </a>
-                        <a href='https://www.instagram.com/osamuelamaro/' target='blank'>
-                        <Image
-                            src="/icons/instagram.svg"
-                            alt="icon-instagram"
-                            width={30}
-                            height={30}
-                        />
-                        </a>
+                        <div className={styles.footerIcons}>
+                            <a href='https://www.behance.net/samuelamaro4' target='blank'>
+                                <FaBehance className={styles.socialIcons}/>
+                            </a>
+                            <a href='https://www.linkedin.com/in/samuel-amaro-230678186/' target='blank'>
+                                <FaLinkedin className={styles.socialIcons}/>
+                            </a>
+                            <a href='https://github.com/samuelamaro02' target='blank'>
+                                <FaGithub className={styles.socialIcons}/>
+                            </a>
+                            <a href='https://www.instagram.com/osamuelamaro/' target='blank'>
+                                <FaInstagram className={styles.socialIcons}/>
+                            </a>
                         </div>
                     </div>
                 </nav>

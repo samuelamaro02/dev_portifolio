@@ -1,6 +1,10 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation"; 
+import { FaBehance } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import Image from 'next/image';
 import styles from "./footer.module.css";
 
@@ -50,38 +54,18 @@ export default function Footer() {
           </div>
           <div className={styles.socialFooter}>
             <h6>Redes Sociais</h6>
-            <div className={styles.socialIcons}>
+            <div className={styles.footerIcons}>
               <a href='https://www.behance.net/samuelamaro4' target='blank'>
-                <Image
-                  src="/icons/behance.svg"
-                  alt="icon-behance"
-                  width={30}
-                  height={30}
-                />
+                <FaBehance className={styles.socialIcons}/>
               </a>
               <a href='https://www.linkedin.com/in/samuel-amaro-230678186/' target='blank'>
-               <Image
-                src="/icons/linkedin.svg"
-                alt="icon-linkedin"
-                width={30}
-                height={30}
-              />
+                <FaLinkedin className={styles.socialIcons}/>
               </a>
               <a href='https://github.com/samuelamaro02' target='blank'>
-               <Image
-                src="/icons/github.svg"
-                alt="icon-github"
-                width={30}
-                height={30}
-              />
+                <FaGithub className={styles.socialIcons}/>
               </a>
               <a href='https://www.instagram.com/osamuelamaro/' target='blank'>
-               <Image
-                src="/icons/instagram.svg"
-                alt="icon-instagram"
-                width={30}
-                height={30}
-              />
+                <FaInstagram className={styles.socialIcons}/>
               </a>
             </div>
           </div>

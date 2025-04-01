@@ -35,14 +35,12 @@
     flex-direction: column;
     cursor: pointer;
   }
-  
-  .hamburger {
-    width: 30px;
-    height: 4px;
-    background: black;
-    margin: 5px 0;
-    transition: 0.3s;
+
+  .iconMenu {
+    background-color: red;
   }
+  
+  
   
   .nav {
     position: fixed;
@@ -113,29 +111,6 @@
   
   }
   
-  .socialIcons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  
-  .socialIcons > a {
-    width: 50%;
-    background-color: var(--color-primary-white);
-    background-image: none;
-    padding: 10px;
-    border: 1px solid var(--color-zinc-500);
-  }
-  
-  .socialIcons > a:hover {
-    background-color: var(--color-primary-black);
-  }
-  
-  .socialIcons > a:hover img {
-    filter: invert(1);
-    cursor: pointer;
-  }
- 
   
   .closeButton {
     display: flex;
@@ -165,6 +140,35 @@
   .closeButton:hover > button {
     color: var(--color-primary-black);
   }
+
+
+  .footerIcons {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .footerIcons > a {
+    width: 100%;
+    background-image: none;
+    padding: 10px;
+    border: 1px solid var(--color-zinc-500);
+  }
+  
+  .socialIcons {
+    color: var(--color-primary-black);
+  }
+  
+  .footerIcons > a:hover {
+    background-color: var(--color-primary-black);
+  }
+  
+  .footerIcons > a:hover .socialIcons {
+    filter: invert(1);
+    cursor: pointer;
+  }
+  
   
 
 
