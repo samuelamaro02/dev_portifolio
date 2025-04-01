@@ -10,7 +10,7 @@ export default function SectionCta(){
             <div className={styles.containerCta}>
                 <div className={styles.infoCta}>
                     <h1>Vamos conversar?</h1>
-                    <p>Vamos conversar sobre como aplicar as melhores soluções para sua empresa com desenvolvimento frontend eficiente e moderno.</p>
+                    <p>Vamos trocar uma ideia sobre como aplicar as melhores soluções para sua empresa com desenvolvimento front-end eficiente e moderno.</p>
                 </div>
                 <div className={styles.containerForm}>
                     <LeadForm />

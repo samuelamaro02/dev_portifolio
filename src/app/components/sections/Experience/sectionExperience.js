@@ -1,4 +1,5 @@
 "use client";
+import { LiaLaptopCodeSolid } from "react-icons/lia";
 import Image from 'next/image';
 import styles from "./sectionExperience.module.css"; 
 
@@ -26,12 +27,7 @@ export default function SectionExperience() {
 
                     <div className={styles.cardExperience}>
                         <div className={styles.cardTittle}>
-                            <Image 
-                                src="/icons/freelancer.svg"  
-                                alt="freelancer"
-                                width={70}
-                                height={50}
-                            />
+                            <LiaLaptopCodeSolid className={styles.iconExp} />
                             <h4>Dev Freelancer</h4>
                             <h6>Jan 2020 - Dez 2021</h6>
                         </div>

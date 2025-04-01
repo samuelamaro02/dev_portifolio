@@ -1,4 +1,14 @@
 "use client";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaFigma } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiSqlite } from "react-icons/si";
+import { RiSupabaseFill } from "react-icons/ri";
 import Image from "next/image";
 import styles from "./sectionSkills.module.css"; 
 
@@ -10,101 +20,43 @@ export default function SectionSkills (){
             <h1>Tecnologias</h1>
                 <div className={styles.gridSkills}>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/html.svg"
-                         alt="icon-html"
-                         layout="intrinsic"
-                         width={56}
-                         height={56}
-                        />
+                        <FaHtml5 className={styles.iconSkills} />
                         <h5>HTML</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/css.svg"
-                         alt="icon-css"
-                         layout="intrinsic"
-                         width={56}
-                         height={56}
-                        />
+                        <FaCss3Alt className={styles.iconSkills} />
                         <h5>CSS</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/icon_javascript.svg"
-                         alt="icon-javascript"
-                         width={56}
-                         height={56}
-                        />
+                         <IoLogoJavascript className={styles.iconSkills} />
                         <h5>JavaScript</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/icon_react.svg"
-                         alt="icon-react"
-                         width={56}
-                         height={56}
-                        />
+                        <FaReact className={styles.iconSkills}  />
                         <h5>React</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/icon_nextjs.svg"
-                         alt="icon-next"
-                         layout="intrinsic"
-                         width={56}
-                         height={56}
-                        />
+                        <RiNextjsFill className={styles.iconSkills} />
                         <h5>Next.Js</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/figma.svg"
-                         alt="icon-figma"
-                         layout="intrinsic"
-                         width={30}
-                         height={56}
-                        />
+                        <FaFigma className={styles.iconSkills} />
                         <h5>Figma</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/git.svg"
-                         alt="icon-git"
-                         layout="intrinsic"
-                         width={56}
-                         height={56}
-                        />
+                        <FaGitAlt className={styles.iconSkills} />
                         <h5>Git</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/nodejs.svg"
-                         alt="icon-nodejs"
-                         layout="intrinsic"
-                         width={56}
-                         height={56}
-                        />
+                        <FaNodeJs className={styles.iconSkills} />
                         <h5>Node.js</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/sqlite.svg"
-                         alt="icon-sqlite"
-                         layout="intrinsic"
-                         width={56}
-                         height={56}
-                        />
+                        <SiSqlite className={styles.iconSkills} />
                         <h5>SQLite</h5>
                     </div>
                     <div className={styles.cardSkills}>
-                        <Image
-                         src="/icons/supabase.svg"
-                         alt="icon-sqlite"
-                         layout="intrinsic"
-                         width={56}
-                         height={56}
-                        />
+                        <RiSupabaseFill className={styles.iconSkills} />
                         <h5>Supabase</h5>
                     </div>
             </div>

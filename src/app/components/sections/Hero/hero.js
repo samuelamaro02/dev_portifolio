@@ -17,7 +17,7 @@ export default function Home() {
             </h1>
             <p>
               Construo interfaces bonitas, rápidas e intuitivas para uma experiência digital eficiente e envolvente.
-              <span className={styles.emphasisText}>A criatividade é meu framework.</span>
+              <span className={styles.emphasisText}> A criatividade é meu framework.</span>
             </p>
             <div className={styles.containerForm}>
                     <LeadForm />
