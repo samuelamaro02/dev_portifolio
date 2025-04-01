@@ -9,8 +9,8 @@ export default function SectionCta(){
        <div id="contactSection" className={styles.container}>
             <div className={styles.containerCta}>
                 <div className={styles.infoCta}>
-                    <h1>Let’s talk for<br></br>Something special</h1>
-                    <p>I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
+                    <h1>Vamos conversar?</h1>
+                    <p>Vamos conversar sobre como aplicar as melhores soluções para sua empresa com desenvolvimento frontend eficiente e moderno.</p>
                 </div>
                 <div className={styles.containerForm}>
                     <LeadForm />

@@ -34,7 +34,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.containerHeader}>
                 <div className={styles.logo}>
-                    <a onClick={() => scrollToSection("heroSection")} className={styles.navLogo}>
+                    <a onClick={() => scrollToSection("heroSection")} className={styles.headerLogo}>
                         <Image
                             src="/icons/logo.svg"
                             alt="Logo"
@@ -58,7 +58,14 @@ export default function Header() {
                 </label>
 
                 <nav ref={navRef} className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
-                    <button onClick={() => setMenuOpen(false)} className={styles.closeButton}>✖</button>
+                    <div onClick={() => setMenuOpen(false)} className={styles.closeButton}> <button>✖</button></div>
+                    <Image
+                        src="/icons/logo.svg"
+                        alt="Logo"
+                        layout="intrinsic"
+                        width={132}
+                        height={40}
+                    />
                     <a onClick={() => scrollToSection("heroSection")} className={styles.navItem}>Home</a>
                     <a onClick={() => scrollToSection("aboutSection")} className={styles.navItem}>Sobre</a>
                     <a onClick={() => scrollToSection("skillsSection")} className={styles.navItem}>Skills</a>
@@ -66,6 +73,42 @@ export default function Header() {
                     <a onClick={() => scrollToSection("projectsSection")} className={styles.navItem}>Projetos</a>
                     <a onClick={() => scrollToSection("testimonialSection")} className={styles.navItem}>Depoimentos</a>
                     <a onClick={() => scrollToSection("contactSection")} className={styles.navItem}>Contato</a>
+                    <div className={styles.socialMenu}>
+                        <div className={styles.socialIcons}>
+                        <a href='https://www.behance.net/samuelamaro4' target='blank'>
+                            <Image
+                            src="/icons/behance.svg"
+                            alt="icon-behance"
+                            width={30}
+                            height={30}
+                            />
+                        </a>
+                        <a href='https://www.linkedin.com/in/samuel-amaro-230678186/' target='blank'>
+                        <Image
+                            src="/icons/linkedin.svg"
+                            alt="icon-linkedin"
+                            width={30}
+                            height={30}
+                        />
+                        </a>
+                        <a href='https://github.com/samuelamaro02' target='blank'>
+                        <Image
+                            src="/icons/github.svg"
+                            alt="icon-github"
+                            width={30}
+                            height={30}
+                        />
+                        </a>
+                        <a href='https://www.instagram.com/osamuelamaro/' target='blank'>
+                        <Image
+                            src="/icons/instagram.svg"
+                            alt="icon-instagram"
+                            width={30}
+                            height={30}
+                        />
+                        </a>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
