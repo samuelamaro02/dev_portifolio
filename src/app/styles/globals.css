@@ -13,6 +13,7 @@
 
   /* Error */
   --color-error-500: #ef4444;
+  --color-sucess-500: #00B400;
 }
 
 @media (prefers-color-scheme: dark) {
