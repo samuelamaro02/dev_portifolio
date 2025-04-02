@@ -8,7 +8,6 @@ import SectionAbout from "./components/sections/About/sectionAbout";
 import SectionProjects from "./components/sections/Projects/sectionProjects";
 import SectionCta from "./components/sections/Cta/sectionCta";
 import Footer from "./components/layout/Footer/footer";
-import ChatBot from "./components/chatBot/chatBot";
 
 
 
@@ -17,7 +16,6 @@ export default function Home() {
     <main>
       <SpeedInsights/>
       <Header/>
-      <ChatBot/>
       <Hero/>
       <SectionSkills/>
       <SectionExperience/>
