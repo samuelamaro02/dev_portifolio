@@ -3,7 +3,7 @@
 import { supabase } from '../../lib/supabaseClient';
 
 export async function saveLead(data) {
-    const { name, email, honeypot, timestamp } = data;
+    const { name, email, telefone, honeypot, timestamp } = data;
 
     if (honeypot) {
         throw new Error('Bot detectado');
@@ -14,13 +14,13 @@ export async function saveLead(data) {
         throw new Error('Preenchimento muito rápido, possível bot');
     }
 
-    if (!name || !email || !email.includes('@')) {
+    if (!name || !telefone || !email || !email.includes('@')) {
         throw new Error('Dados inválidos');
     }
 
     const { error } = await supabase
         .from('leads')
-        .insert([{ name, email }]);
+        .insert([{ name, email, telefone }]);
 
     if (error) {
         throw new Error(error.message); 

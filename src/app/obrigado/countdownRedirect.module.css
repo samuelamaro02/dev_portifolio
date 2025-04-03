@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: flex-start;
   border: 2px solid var(--color-zinc-300);
+  border-radius: 8px;
   padding: 40px;
 }
 
@@ -38,7 +39,8 @@
 
 @media only screen and (max-width: 420px) {
   .container {
-    width: 100vw;
+    width: 100%;
+    gap: 10px;
   }
 
 

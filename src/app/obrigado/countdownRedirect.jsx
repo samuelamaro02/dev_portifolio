@@ -10,7 +10,7 @@ export default function Countdown() {
 
   useEffect(() => {
     if (count === 0) {
-      //router.push("https://wa.me/seunumero"); // Altere para o seu link do WhatsApp
+      router.push("https://wa.me/5583998404188?text=Oi,%20quero%20conversar%20contigo%20%5Bseu%20assunto%5D."); // Altere para o seu link do WhatsApp
       return;
     }
 
