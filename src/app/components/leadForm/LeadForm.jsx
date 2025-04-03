@@ -19,7 +19,7 @@ export default function LeadForm() {
       await saveLead(data);
       toast.success('Sucesso, entraremos em contato');
       reset();
-      //router.push('/obrigado');
+      router.push('/obrigado');
     } catch (e) {
       toast.error('Erro ao cadastrar, confira seus dados');
     }
