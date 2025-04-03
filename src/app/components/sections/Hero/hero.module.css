@@ -63,7 +63,6 @@
   .heroImageContainer {
     width: 100%;
     min-height: 300px; 
-    overflow: hidden; 
   }
 
   .heroImageContainer img {
@@ -71,4 +70,45 @@
     height: auto;
     object-fit: cover;
   }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) { 
+
+  .heroContainer {
+    width: 100vw;
+    min-height: auto; 
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+
+  .heroWrapper {
+    width: 100%;
+    min-height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start; 
+  }
+
+  .heroInfo {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .heroImageContainer {
+    width: 100%;
+    min-height: 300px;  
+  }
+
+  .heroImageContainer img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  }
+
 }

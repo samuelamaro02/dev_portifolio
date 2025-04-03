@@ -60,6 +60,36 @@
       justify-content: flex-start;
       align-items: center;
     }
+  }
 
+  @media only screen and (min-width: 481px) and (max-width: 767px) { 
+    .container {
+      height: 100%;
+    }
+  
+    .containerCta{
+      width: 100%;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      
+      text-align: center;
+      
+    }
+    .infoCta, .containerForm{
+        width: 100%;
+    }
+
+    .infoCta p{
+        width: 100%;
+        padding: 0px 40px;
+    }
+
+    .containerForm{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
 
   }

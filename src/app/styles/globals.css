@@ -65,43 +65,45 @@ a {
 }
 
 h1 {
-  font-size: clamp(28px, 10vw, 48px);
+  font-size: clamp(2rem, 6vw, 3rem); /* Entre 32px e 48px */
   font-weight: 800;
 }
 
 h3 {
-  font-size: clamp(18px, 5vw, 22px);
+  font-size: clamp(1.25rem, 4.5vw, 1.75rem); /* Entre 20px e 28px */
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.4em;
   letter-spacing: -0.4px;
 }
 
 h4 {
-  font-size: clamp(16px, 5vw, 24px);
+  font-size: clamp(1.125rem, 4vw, 1.5rem); /* Entre 18px e 24px */
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.4em;
   letter-spacing: -0.48px;
 }
 
 h5 {
-  font-size: clamp(14px, 4.5vw, 20px);
+  font-size: clamp(1rem, 3.5vw, 1.25rem); /* Entre 16px e 20px */
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.4em;
   letter-spacing: -0.4px;
   text-transform: capitalize;
 }
 
 h6 {
-  font-size: clamp(12px, 4vw, 16px);
+  font-size: clamp(0.875rem, 3vw, 1rem); /* Entre 14px e 16px */
   font-weight: 600;
-  line-height: 20px;
+  line-height: 1.4em;
   letter-spacing: -0.32px;
 }
 
 p {
-  font-size: clamp(14px, 3.5vw, 16px);
+  font-size: clamp(0.875rem, 2.5vw, 1rem); /* Entre 14px e 16px */
   font-weight: 300;
+  line-height: 1.6em;
 }
+
 
 
 @media (prefers-color-scheme: dark) {
