@@ -1,6 +1,6 @@
-'use server'
-
+'use server';
 import { supabase } from '../../lib/supabaseClient';
+import { saveToNotion } from '../../lib/notionClient';
 
 export async function saveLead(data) {
     const { name, email, telefone, honeypot, timestamp } = data;
@@ -18,11 +18,13 @@ export async function saveLead(data) {
         throw new Error('Dados inválidos');
     }
 
+    await saveToNotion(name, email, telefone);
+    
     const { error } = await supabase
         .from('leads')
         .insert([{ name, email, telefone }]);
 
     if (error) {
-        throw new Error(error.message); 
+        throw new Error(error.message);
     }
 }
