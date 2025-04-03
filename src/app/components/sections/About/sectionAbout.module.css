@@ -41,7 +41,7 @@
     letter-spacing: 0.32px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px){ 
     .container {
         height: auto;
         
