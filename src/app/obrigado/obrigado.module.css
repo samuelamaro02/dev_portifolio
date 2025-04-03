@@ -42,7 +42,7 @@
   }
 
   
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 480px) {
 
     .containerObrigado {
         width: 100%;
@@ -63,22 +63,66 @@
       .obrigadoCountdown { 
         width: 100%;
         height: 100%;
+        align-items: center;
       }
 
       .obrigadoCountdown > p {
         width: 100%;
+        text-align: center;
       }
+
 
       .heroImage {
         width: 100%;
         height: 800px;
-        position: relative; 
+        
       }
     
       .heroImage img {
           object-fit: cover;
       }
-   
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .containerObrigado {
+      width: 100%;
+      height: 900px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .heroObrigado {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
+
+    .obrigadoCountdown { 
+      width: 100%;
+      height: 100%;
+      align-items: center;
+    }
+
+    .obrigadoCountdown > p {
+      width: 70%;
+      text-align: center;
+    }
+
+
+    .heroImage {
+      width: 70%;
+      height: 800px;
+      
+    }
   
+    .heroImage img {
+        width: 20%;
+        object-fit: cover;
+        position: relative; 
+    }
+
   }
   
