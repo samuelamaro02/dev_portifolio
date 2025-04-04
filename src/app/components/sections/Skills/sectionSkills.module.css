@@ -136,7 +136,7 @@
     }
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1099px) {
     .container {
       height: 100%;
       gap: 40px;
@@ -144,7 +144,7 @@
   
     .containerSkills {
       width: 100%;
-      padding: 40px 20px;
+      padding: 10px 20px;
     }
 
     .gridSkills {
@@ -172,4 +172,16 @@
     }
 
 
+  }
+
+  @media only screen and (min-width: 1100px) and (max-width: 1280px) {
+    .container {
+      height: 100%;
+      gap: 40px;
+    }
+  
+    .containerSkills {
+      width: 100%;
+      padding: 40px 20px;
+    }
   }

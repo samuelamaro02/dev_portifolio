@@ -93,12 +93,22 @@
     }
 
     .form {
-        width: 80%;
+        width: 100%;
     }
 
     .input,
     .button {
-        max-width: 100%; 
+        max-width: 100%;
+    }
+
+    .rowInputs {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .input[name="name"],
+    .input[name="email"] {
+        width: 50%;
     }
 }
 
