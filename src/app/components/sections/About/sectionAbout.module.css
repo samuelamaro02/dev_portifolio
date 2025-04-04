@@ -93,5 +93,41 @@
     padding-bottom: 20px;
 }
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .container {
+    height: auto;
+    
+  }
+
+  .containerAbout{
+    width: 100%;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .imageAbout{
+    width: 100%;
+  }
+
+  .aboutDescription {
+    width: 100%;
+  }
+  
+  .aboutDescription > h1{
+    font-size: 30px;
+  }
+
+  .aboutDescription > p{
+    font-size: 14px;
+  }
+
+.aboutDescription > h1 {
+    padding-bottom: 20px;
+}
 
 }
+

@@ -28,18 +28,21 @@ export default function LeadForm() {
   return (
     <div className={styles.containerForm}>
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-        <input
-          {...register('name')}
-          placeholder="Seu nome"
-          className={styles.input}
-          required
-        />
-        <input
-          {...register('email')}
-          placeholder="Seu e-mail"
-          className={styles.input}
-          required
-        />
+        
+        <div className={styles.rowInputs}>
+          <input
+            {...register('name')}
+            placeholder="Seu nome"
+            className={styles.input}
+            required
+          />
+          <input
+            {...register('email')}
+            placeholder="Seu e-mail"
+            className={styles.input}
+            required
+          />
+        </div>
 
         <Controller
           name="telefone"

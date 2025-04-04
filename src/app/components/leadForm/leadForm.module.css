@@ -52,6 +52,13 @@
     box-shadow: 0 1px 2px #0000004d, 0 0 #000, inset 1px 1px .25px #ffffff4d, inset 0 2px 1px #ffffff80;
 }
 
+.rowInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
 
 .input:-webkit-autofill,
 .input:-webkit-autofill:hover,
@@ -95,3 +102,28 @@
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .containerForm {
+        max-width: 100%;
+        width: 450px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .input,
+    .button {
+        max-width: 100%;
+    }
+
+    .rowInputs {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .input[name="name"],
+    .input[name="email"] {
+        width: 50%;
+    }
+}

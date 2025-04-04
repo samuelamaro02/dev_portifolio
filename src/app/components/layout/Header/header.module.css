@@ -164,7 +164,7 @@
     cursor: pointer;
   }
 
-  @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .header {
       width: 100vw;
       height: 80px;
@@ -187,7 +187,6 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
- 
   .header {
     width: 100vw;
     height: 80px;
@@ -208,4 +207,26 @@
     padding: 70px 20px;
   }
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    width: 100vw;
+    height: 80px;
+    padding: 20px;
+    margin-top: 0%;
+  }
+
+  .containerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav{
+    width: 75%;
+    padding: 70px 20px;
+  }
 }
