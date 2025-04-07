@@ -13,7 +13,7 @@ export default function SectionCta(){
                     <p>Vamos trocar uma ideia sobre como aplicar as melhores soluções para sua empresa com desenvolvimento front-end eficiente e moderno.</p>
                 </div>
                 <div className={styles.containerForm}>
-                    <LeadForm />
+                     <LeadForm/>
                     <Toaster richColors />
                 </div>
             </div>
