@@ -3,7 +3,7 @@
 export async function POST(req) {
     const body = await req.json();
   
-    const token = process.env.NEXT_PUBLIC_FB_ACCESS_TOKEN;
+    const token = process.env.FB_ACCESS_TOKEN;
     const pixelId = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
   
     const fbUrl = `https://graph.facebook.com/v19.0/${pixelId}/events?access_token=${token}`;
@@ -17,7 +17,7 @@ export async function POST(req) {
           event_source_url: body.url || "https://seusite.com",
           user_data: {
             client_user_agent: req.headers.get("user-agent"),
-            ...body.userData, // opcional: email hash, IP, etc.
+            ...body.userData, 
           },
           custom_data: body.customData || {},
         },
