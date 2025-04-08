@@ -72,11 +72,10 @@ export default function Header() {
                         height={40}
                     />
                     <a onClick={() => scrollToSection("heroSection")} className={styles.navItem}>Home</a>
-                    <a onClick={() => scrollToSection("aboutSection")} className={styles.navItem}>Sobre</a>
-                    <a onClick={() => scrollToSection("skillsSection")} className={styles.navItem}>Skills</a>
+                    <a onClick={() => scrollToSection("skillsSection")} className={styles.navItem}>Tecnologias</a>
                     <a onClick={() => scrollToSection("experienceSection")} className={styles.navItem}>Experiência</a>
+                    <a onClick={() => scrollToSection("aboutSection")} className={styles.navItem}>Sobre</a>
                     <a onClick={() => scrollToSection("projectsSection")} className={styles.navItem}>Projetos</a>
-                    <a onClick={() => scrollToSection("testimonialSection")} className={styles.navItem}>Depoimentos</a>
                     <a onClick={() => scrollToSection("contactSection")} className={styles.navItem}>Contato</a>
                     <div className={styles.socialMenu}>
                         <div className={styles.footerIcons}>
