@@ -1,5 +1,6 @@
 import { Sora } from "next/font/google";
 import "./styles/globals.css";
+import CookieBanner from "../app/components/cookieBanner/cookieBanner";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${sora.variable}`}>
       <body>
         {children}
+        <CookieBanner />
       </body>
     </html>
   );

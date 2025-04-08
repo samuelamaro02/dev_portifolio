@@ -65,26 +65,26 @@ a {
 }
 
 h1 {
-  font-size: clamp(2rem, 6vw, 3rem); /* Entre 32px e 48px */
+  font-size: clamp(2rem, 6vw, 3rem); 
   font-weight: 800;
 }
 
 h3 {
-  font-size: clamp(1.25rem, 4.5vw, 1.75rem); /* Entre 20px e 28px */
+  font-size: clamp(1.25rem, 4.5vw, 1.75rem); 
   font-weight: 700;
   line-height: 1.4em;
   letter-spacing: -0.4px;
 }
 
 h4 {
-  font-size: clamp(1.125rem, 4vw, 1.5rem); /* Entre 18px e 24px */
+  font-size: clamp(1.125rem, 4vw, 1.5rem); 
   font-weight: 600;
   line-height: 1.4em;
   letter-spacing: -0.48px;
 }
 
 h5 {
-  font-size: clamp(1rem, 3.5vw, 1.25rem); /* Entre 16px e 20px */
+  font-size: clamp(1rem, 3.5vw, 1.25rem); 
   font-weight: 700;
   line-height: 1.4em;
   letter-spacing: -0.4px;
@@ -92,16 +92,29 @@ h5 {
 }
 
 h6 {
-  font-size: clamp(0.875rem, 3vw, 1rem); /* Entre 14px e 16px */
+  font-size: clamp(0.875rem, 3vw, 1rem); 
   font-weight: 600;
   line-height: 1.4em;
   letter-spacing: -0.32px;
 }
 
 p {
-  font-size: clamp(0.875rem, 2.5vw, 1rem); /* Entre 14px e 16px */
+  font-size: clamp(0.875rem, 2.5vw, 1rem); 
   font-weight: 300;
   line-height: 1.6em;
+}
+
+.cookie-container {
+  background: #202020;
+  color: white;
+  font-family: Arial;
+  font-size: 16px;
+}
+.cookie-button {
+  background: limegreen;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
 
