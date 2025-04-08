@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 import CountdownRedirect from "./countdownRedirect";
 import Footer from "../components/layout/Footer/footer";
-import { initFacebookPixel, trackPageView, trackEvent } from "@/lib/facebookPixel";
+import { initFacebookPixel, trackEvent } from "@/lib/facebookPixel";
 import { sendFbEvent } from "@/lib/facebookConversionApi";
 
 const PIXEL_ID = '1337062430845620';
@@ -21,30 +21,28 @@ export default function Obrigado() {
   useEffect(() => {
     let fbPixel;
 
-  
-    initFacebookPixel(PIXEL_ID).then((ReactPixel) => {
-      fbPixel = ReactPixel;
-      trackPageView(fbPixel);
-      trackEvent(fbPixel, 'Lead');
-    });
+    if (typeof window !== "undefined") {
+      initFacebookPixel(PIXEL_ID).then((ReactPixel) => {
+        fbPixel = ReactPixel;
+        trackEvent(fbPixel, 'PageView');
+        trackEvent(fbPixel, 'Lead');
+      });
 
-  
-    const fbp = getCookie('_fbp') || '';
-    const fbc = getCookie('_fbc') || '';
+      const fbp = getCookie('_fbp') || '';
+      const fbc = getCookie('_fbc') || '';
 
-  
-    sendFbEvent('PageView', { value: 0, currency: 'BRL' }, {
-      client_user_agent: navigator.userAgent,
-      fbp,
-      fbc,
-    });
+      sendFbEvent('PageView', { value: 0, currency: 'BRL' }, {
+        client_user_agent: navigator.userAgent,
+        fbp,
+        fbc,
+      });
 
-    sendFbEvent('Lead', { value: 1, currency: 'BRL' }, {
-      client_user_agent: navigator.userAgent,
-      fbp,
-      fbc,
-    });
-
+      sendFbEvent('Lead', { value: 1, currency: 'BRL' }, {
+        client_user_agent: navigator.userAgent,
+        fbp,
+        fbc,
+      });
+    }
   }, []);
 
   return (

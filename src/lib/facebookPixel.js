@@ -1,31 +1,19 @@
+let ReactPixel = null;
+
 export async function initFacebookPixel(pixelId) {
-    if (typeof window === 'undefined') return null;
-  
-    const { default: ReactPixel } = await import('react-facebook-pixel');
-  
-    const advancedMatching = {
-      em: 'user@example.com'
-    };
-  
-    const options = {
-      autoConfig: true,
-      debug: false
-    };
-  
-    ReactPixel.init(pixelId, advancedMatching, options);
-  
+  if (typeof window !== 'undefined') {
+    if (!ReactPixel) {
+      const mod = await import('react-facebook-pixel');
+      ReactPixel = mod.default;
+      ReactPixel.init(pixelId);
+    }
     return ReactPixel;
   }
-  
-  export function trackPageView(ReactPixel) {
-    if (ReactPixel) {
-      ReactPixel.pageView();
-    }
+  return null;
+}
+
+export function trackEvent(pixel, eventName, eventId) {
+  if (pixel && typeof window !== 'undefined') {
+    pixel.track(eventName, {}, { eventID: eventId });
   }
-  
-  export function trackEvent(ReactPixel, eventName, data = {}) {
-    if (ReactPixel) {
-      ReactPixel.track(eventName, data);
-    }
-  }
-  
+}
